@@ -57,10 +57,16 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-overview
-org-img-link
-persian-input-method
+doom-emacs-init
 env
+overview
+doom-base
+org-img-link
+doom-emacs-framework
+doom-blee-base
+env2
+doom-blee-init
+persian-input-method
 "
 # }}} DBLOCK-nodesList
 ####+END:
