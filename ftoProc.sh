@@ -13,13 +13,13 @@ __copying__="
 
 ####+BEGIN: bx:bsip:bash:seed-spec :types "seedFtoCommon.sh"
 SEED="
-*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] | 
+*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] |
 "
 FILE="
-*  /This File/ :: /bisos/git/auth/bxRepos/blee/ftoProc.sh 
+*  /This File/ :: /bisos/git/auth/bxRepos/blee/ftoProc.sh
 "
 if [ "${loadFiles}" == "" ] ; then
-    /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@" 
+    /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@"
     exit $?
 fi
 ####+END:
@@ -41,6 +41,11 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
+doom-blee-init
+doom-blee-base
+doom-emacs-init
+doom-base
+doom-emacs-framework
 "
 # }}} DBLOCK-leavesList
 ####+END:
@@ -57,15 +62,16 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-doom-emacs-init
+comment-block
+env2
+org-img-link
+poly-dblock
+blee-dblocks
+blee-lib
+tutorials
 env
 overview
-doom-base
-org-img-link
-doom-emacs-framework
-doom-blee-base
-env2
-doom-blee-init
+comeega
 persian-input-method
 "
 # }}} DBLOCK-nodesList
